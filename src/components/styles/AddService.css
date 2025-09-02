@@ -1,0 +1,38 @@
+.service-type-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-type-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-type-option:hover {
+  border-color: #2563eb;
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.service-type-option input[type="radio"] {
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+  accent-color: #2563eb;
+}
+
+.service-type-option span {
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.service-type-option input[type="radio"]:checked + span {
+  color: #2563eb;
+  font-weight: 500;
+} 

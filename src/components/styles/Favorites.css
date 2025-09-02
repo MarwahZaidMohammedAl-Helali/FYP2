@@ -1,0 +1,158 @@
+.favorites-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.favorites-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.favorites-search-bar {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.favorites-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.favorites-search-input:focus {
+  outline: none;
+  border-color: #4a8fe1;
+  box-shadow: 0 0 0 3px rgba(74, 143, 225, 0.1);
+}
+
+.favorites-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+.favorites-sort {
+  width: 12rem;
+}
+
+.favorites-sort select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 0.875rem;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.favorites-sort select:focus {
+  outline: none;
+  border-color: #4a8fe1;
+  box-shadow: 0 0 0 3px rgba(74, 143, 225, 0.1);
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: #718096;
+}
+
+.favorites-empty-icon {
+  font-size: 3rem;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.favorites-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.favorite-item {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #4a8fe1;
+}
+
+.favorite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-title {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.favorite-date {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.favorite-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.favorite-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favorite-button.primary {
+  background-color: #4a8fe1;
+  color: white;
+}
+
+.favorite-button.primary:hover {
+  background-color: #357abd;
+}
+
+.favorite-button.secondary {
+  background-color: #edf2f7;
+  color: #4a5568;
+}
+
+.favorite-button.secondary:hover {
+  background-color: #e2e8f0;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .favorites-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 
